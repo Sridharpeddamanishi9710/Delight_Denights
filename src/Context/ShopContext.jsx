@@ -1,7 +1,6 @@
 import React, { createContext, useState } from "react";
 import all_menu_items from "../assets/all_menu_items.js";
 
-// Step 1: Create the context
 export const ShopContext = createContext(null);
 
 const getDefaultContext=()=>{
@@ -11,7 +10,6 @@ const getDefaultContext=()=>{
         }return cart;
     }
 
-// Step 2: Make a Provider component
 const ShopContextProvider = (props) => {
     const [cartItems,setCartItems] = useState(getDefaultContext);
     
