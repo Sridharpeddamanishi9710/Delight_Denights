@@ -42,7 +42,6 @@
   background: #dcdcdc;
 }
 
-/* Mobile adjustments */
 @media (max-width: 768px) {
   .shopcategory-banner {
     width: 95%;
