@@ -1,0 +1,140 @@
+.productdisplay {
+    display: flex;
+    margin: 40px 50px;
+    flex-wrap: wrap;
+}
+
+.productdisplay-left {
+    display: flex;
+    gap: 17px;
+    flex: 1;
+    min-width: 300px;
+}
+
+.productdisplay-img-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.productdisplay-img-list img {
+    height: 160px;
+    object-fit: cover;
+}
+
+.productdisplay-main-img {
+    height: 500px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.productdisplay-right {
+    margin: 30px 0px 30px 90px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 300px;
+}
+
+.productdisplay-right h1 {
+    color: #3d3d3d;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.productdisplay-right-star {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.productdisplay-right-star img {
+    width: 18px;
+    height: 18px;
+}
+
+.productdisplay-right-prices {
+    display: flex;
+    margin: 20px 0px;
+    gap: 30px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.productdisplay-right-price-old {
+    color: #818181;
+    text-decoration: line-through;
+}
+
+.productdisplay-right-price-new {
+    color: #ff4141;
+}
+
+.productdisplay-right button {
+    padding: 20px 40px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: #ff4141;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .productdisplay {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .productdisplay-left {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productdisplay-img-list {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .productdisplay-img-list img {
+        height: 80px;
+    }
+
+    .productdisplay-main-img {
+        height: 300px;
+    }
+
+    .productdisplay-right {
+        margin: 20px 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .productdisplay-right h1 {
+        font-size: 28px;
+    }
+
+    .productdisplay-right-star img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .productdisplay-right-prices {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .productdisplay-right button {
+        width: 90%;
+    }
+}
